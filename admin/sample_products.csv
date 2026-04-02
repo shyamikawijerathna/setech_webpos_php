@@ -1,0 +1,5 @@
+Category ID,Product Name,Description,Buy Price,Quantity,Sale Price,Store Location,Image Filename
+1,Sample Phone 12,128GB Black,500.00,50,650.00,Store A,phone12.jpg
+1,Sample Phone 13,256GB White,600.00,30,750.00,Store A,phone13.jpg
+2,Wireless Earbuds,Noise Cancelling,45.00,100,80.00,Store B,earbuds.png
+3,Laptop Stand,Aluminum Adjustable,15.00,200,35.00,Store C,stand.jpg

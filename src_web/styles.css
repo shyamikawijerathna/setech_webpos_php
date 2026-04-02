@@ -1,0 +1,96 @@
+ /* Ensure the carousel has a consistent height */
+
+
+/* Custom transitions if needed */
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+/* Header section */
+header .social-links a {
+    text-decoration: none;
+    font-size: 0.9rem;
+
+}
+
+.navbar{
+    background-color: #0d6efd;
+}
+
+
+/* Search Bar Styles */
+.ebay-search-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 2px solid #6eee6a;
+    border-radius: 20px;
+    overflow: hidden; /* Keeps corners sharp/rounded within the border */
+}
+
+.category-select {
+    border-right: 1px solid #ddd;
+    background-color: #f7f7f7;
+}
+
+.category-select select {
+    border: none;
+    background: transparent;
+    padding: 10px 15px;
+    font-size: 14px;
+    outline: none;
+    cursor: pointer;
+    height: 44px;
+}
+
+.search-input-group {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Makes the input take up the remaining space */
+    padding: 0 10px;
+    background: white;
+}
+
+.search-icon {
+    color: #707070;
+    margin-right: 8px;
+}
+
+.search-input-group input {
+    width: 100%;
+    border: none;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    background-color: #3665f3; /* eBay Blue */
+    color: white;
+    border: none;
+    padding: 0 35px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.search-button:hover {
+    background-color: #2b52cc;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 600px) {
+    .category-select {
+        display: none; /* Hide category on small screens like modern eBay app */
+    }
+}
+
+/* Footer section */
+footer {
+    border-top: 3px solid #0d6efd;
+}
+
+
