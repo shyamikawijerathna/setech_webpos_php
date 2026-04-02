@@ -25,7 +25,7 @@
                 </div>
             </div>
             <hr>
-            <p class="small mb-0">&copy; 2026 Your Company. All Rights Reserved.</p>
+            <p class="small mb-0">&copy; 2026 SE TECHNOLOGIES. All Rights Reserved.</p>
         </div>
     </footer>
 

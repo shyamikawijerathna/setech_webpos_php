@@ -23,12 +23,17 @@
     </nav>
 
     <form class="ebay-search-wrapper">
-                <div class="category-select">
-                    <select name="category">
-                        <option value="0">All Categories</option>
-                        <option value="1">Electronics</option>
-                        <option value="2">Fashion</option>
-                        <option value="3">Collectibles</option>
+                <div class="category-select" style="margin-left: 20px;background-color: #f8f9fa; border-radius: 5px; padding: 2px;">
+                    <select name="category" >
+                        <option value="0" style="border: none; background: #3f8cda; padding: 5px;">All Categories</option>
+                        <option value="1">Phone Spare Parts</option>
+                        <option value="2">Phone Accessories</option>
+                        <option value="3">Used Phones</option>
+                        <option value="4">Desktop PC Accessories</option>
+                        <option value="5">Laptop Accessories</option>
+                        <option value="6">Laptop Spare Parts-Used</option>
+                        <option value="7">Laptop Spare Parts-New</option>
+
                     </select>
                 </div>
 
