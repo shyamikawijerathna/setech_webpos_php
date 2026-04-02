@@ -10,12 +10,13 @@
                 <h1 class="display-4 fw-bold">SE TECHNOLOGIES POS SYSTEM</h1>
 
                 <?php if(!isset($_SESSION['loggedIn'])) : ?>
-                    <div class="center-container">
-                            <a href="login.php" class="btn login-btn">Login here</a>
-                        </div>
-                    
+                    <div class="d-flex justify-content-center mt-4">
+                        <a href="login.php" class="btn btn-success btn-lg px-5">Login here</a>
+                    </div>
                 <?php else: ?>
-                    <a href="admin/index.php" class="btn btn-success btn-lg mt-4 px-5">Go to Dashboard</a>
+                    <div class="d-flex justify-content-center mt-4">
+                        <a href="admin/index.php" class="btn btn-success btn-lg px-5">Go to Dashboard</a>
+                    </div>
                 <?php endif; ?>
 
             </div>
