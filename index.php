@@ -1,5 +1,10 @@
 <?php include("includes_web/header.php"); 
-      include("includes_web/navbar.php");    ?>
+      include("includes_web/navbar.php");    
+      include("config/dbcon.php");
+      include("config/function.php");
+
+     
+    ?>
 
     <main>
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -95,23 +100,98 @@
                     </div>
         </div>
 
+             <!-- Fetch Today's Deal products (by category name) -->
+  <?php    $todayDealCategory = 'Today Deals';
+      $safeTodayDealCategory = mysqli_real_escape_string($conn, $todayDealCategory);
+      $todayDealProducts = mysqli_query($conn, "SELECT * FROM products WHERE cat_name = '$safeTodayDealCategory' AND status = 1 AND (deleted_at IS NULL OR deleted_at = '') ORDER BY id DESC LIMIT 6");
 
-
+      ?>
         <div class="container py-5">
             <h2 class="text-right mb-4">Today's Deal</h2>
             <div class="row">
-                <div class="col-md-2 mb-4">
-                    <div class="card h-100 shadow-sm">
-                        <img src="src_web/img/featured1.jpg" class="card-img-top" alt="Featured Product 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Wireless Earbuds</h5>
-                            <p class="card-text">$49.99</p>
-                            <a href="#" class="btn btn-outline-primary">View Details</a>
+                <?php if($todayDealProducts && mysqli_num_rows($todayDealProducts) > 0): ?>
+                    <?php while($deal = mysqli_fetch_assoc($todayDealProducts)): ?>
+                        <?php
+                            $imagePath = !empty($deal['image']) && file_exists($deal['image']) ? $deal['image'] : 'src_web/img/featured1.jpg';
+                            $productTitle = htmlspecialchars($deal['prod_name']);
+                            $productPrice = number_format((float)$deal['sale_price'], 2);
+                        ?>
+                        <div class="col-md-2 mb-4">
+                            <div class="card h-100 shadow-sm">
+                                <img src="<?= $imagePath; ?>" class="card-img-top" alt="<?= $productTitle; ?>">
+                                <div class="card-body">
+                                    <h5 class="card-title"><?= $productTitle; ?></h5>
+                                    <p class="card-text">Rs. <?= $productPrice; ?></p>
+                                    <a href="product_details.php?id=<?= $deal['id']; ?>" class="btn btn-outline-primary">View Details</a>
+                                </div>
+                            </div>
                         </div>
+                    <?php endwhile; ?>
+                <?php else: ?>
+                    <div class="col-12">
+                        <div class="alert alert-info">No products found in the Today Deal category. Please add products with category <strong>Today Deal</strong> in admin.</div>
+                    </div>
+                <?php endif; ?>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="height: 350px; background-color: #e6dc54;">
+                    <div class="row h-100 align-items-center justify-content-center">
+                        
+                        <div class="col-md-8 d-flex justify-content-around align-items-center">
+                            <img src="src_web/img/ram.jpg" alt="Product 1" class="img-fluid" style="max-height: 200px;">
+                            <img src="src_web/img/ssd.jpg" alt="Product 2" class="img-fluid" style="max-height: 200px;">
+                            <img src="src_web/img/ps.jpg" alt="Product 3" class="img-fluid" style="max-height: 200px;">
+                        </div>
+
+                        <div class="col-md-2 text-center">
+                            <a href="desktopPcAccessories.php" class="btn btn-dark btn-md px-4 py-3 fw-bold rounded-pill shadow">
+                                SHOP NOW
+                            </a>
+                        </div>
+
                     </div>
                 </div>
 
+                              <!-- Fetch Trending products (by category name) -->
+                    <?php    $trendingCategory = 'Trending on';
+                    $safeTrendingCategory = mysqli_real_escape_string($conn, $trendingCategory);
+                    $trendingProducts = mysqli_query($conn, "SELECT * FROM products WHERE cat_name = '$safeTrendingCategory' AND status = 1 AND (deleted_at IS NULL OR deleted_at = '') ORDER BY id DESC LIMIT 6");
 
+                    ?>
+
+
+                <div class="container py-5">
+                        <h2 class="text-right mb-4">Trending Products</h2>
+                        <div class="row">
+                            <?php if($trendingProducts && mysqli_num_rows($trendingProducts) > 0): ?>
+                                <?php while($trend = mysqli_fetch_assoc($trendingProducts)): ?>
+                                    <?php
+                                        $imagePath = !empty($trend['image']) && file_exists($trend['image']) ? $trend['image'] : 'src_web/img/featured1.jpg';
+                                        $productTitle = htmlspecialchars($trend['prod_name']);
+                                        $productPrice = number_format((float)$trend['sale_price'], 2);
+                                    ?>
+                                    <div class="col-md-2 mb-4">
+                                        <div class="card h-100 shadow-sm">
+                                            <img src="<?= $imagePath; ?>" class="card-img-top" alt="<?= $productTitle; ?>">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><?= $productTitle; ?></h5>
+                                                <p class="card-text">Rs. <?= $productPrice; ?></p>
+                                                <a href="product_details.php?id=<?= $trend['id']; ?>" class="btn btn-outline-primary">View Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endwhile; ?>
+                            <?php else: ?>
+                                <div class="col-12">
+                                    <div class="alert alert-info">No products found in the Today Deal category. Please add products with category <strong>Today Deal</strong> in admin.</div>
+                                </div>
+                            <?php endif; ?>
+                        </div>
+                </div>     
+
+
+            
     </main>
 
 

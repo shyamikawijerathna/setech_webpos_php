@@ -5,6 +5,11 @@
                 <div class="col-md-4">
                     <h5>About Us</h5>
                     <p class="small">We provide high-quality web solutions for your business needs.</p>
+
+                    <div class="col-md-4">
+                        <h5>Admin Login</h5>
+                        <a href="admin.php" class="btn btn-primary">Login</a>
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <h5>Quick Links</h5>
