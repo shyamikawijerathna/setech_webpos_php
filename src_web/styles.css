@@ -25,7 +25,7 @@ header .social-links a {
     max-width: 900px;
     margin: 20px auto;
     border: 2px solid #6eee6a;
-    border-radius: 20px;
+    border-radius: 30px;
     overflow: hidden; /* Keeps corners sharp/rounded within the border */
 }
 
