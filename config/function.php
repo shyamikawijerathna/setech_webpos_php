@@ -1,5 +1,12 @@
 <?php 
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    if (!headers_sent()) {
+        session_start();
+    } else {
+        // Cannot start session because headers are already sent. Make sure includes are placed before output.
+        // You can also call session_start() at the top of script files before any HTML output.
+    }
+}
 require 'dbcon.php';
 
 // Input validation
