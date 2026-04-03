@@ -2,6 +2,17 @@
 include "includes_web/navbar.php"; ?>
 
 
+<!--Breadcrumbs -->
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">about</li>
+    </ol>
+    </nav>
+</div>
+
+
 <div class="container mt-4">
     <h1 class="text-center mb-4">Welcome to SE TECHNOLOGIES</h1>
     <p class="lead text-center">Your one-stop solution for all your technology needs. We offer a wide range of services including laptop and desktop repairs, sales of new and refurbished laptops, import and distribution of computer parts, mobile phone repair, toners and ink cartridge supply, printer repair, and custom software & web design solutions.</p>

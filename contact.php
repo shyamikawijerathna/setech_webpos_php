@@ -31,6 +31,16 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 }
 ?>
 
+<!--Breadcrumbs -->
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+    </ol>
+    </nav>
+</div>
+
 <section class="container py-5">
     <div class="row gy-4">
         <div class="col-12 text-center mb-4">

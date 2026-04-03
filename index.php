@@ -7,6 +7,15 @@
     ?>
 
     <main>
+        <!--Breadcrumbs -->
+        <div class="container mt-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+        </div>
+<!-- carousel -->
         <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
@@ -60,7 +69,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Special Offer - Brand New / Used</h5>
                             <p class="card-text">Build Your Dream PC with our exclusive deals.Limited time offer!</p>
-                            <a href="#" class="btn btn-primary">Shop Now</a>
+                            <a href="desktop_pc_accessories.php" class="btn btn-primary">Shop Now</a>
                         </div>
                         
                     </div>
@@ -72,7 +81,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Special Offer - Brand New / Used</h5>
                             <p class="card-text">Buy Your Dream Laptop with our exclusive deals. Limited time offer!</p>
-                            <a href="#" class="btn btn-primary">Shop Now</a>
+                            <a href="" class="btn btn-primary">Shop Now</a>
                         </div>
                     </div>
                 </div>

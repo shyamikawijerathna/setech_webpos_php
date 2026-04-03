@@ -12,10 +12,11 @@
 
     <header class="bg-primary text-white py-2">
         <div class="container d-flex justify-content-between align-items-center">
-            <small>Contact: +94765789022</small>
+            <small>Contact: +94765789022   Email: sales@setech.lk</small>
+            
             <div class="social-links">
-                <a href="#" class="text-white me-2">Twitter</a>
-                <a href="#" class="text-white">LinkedIn</a>
+                <a href="https://www.facebook.com/share/14eGX5yWaM6/?mibextid=wwXIfr" class="text-white me-2" target="_blank">Facebook</a>
+               <!-- <a href="#" class="text-white">LinkedIn</a> -->
             </div>
         </div>
     </header>

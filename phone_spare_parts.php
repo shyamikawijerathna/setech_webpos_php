@@ -68,6 +68,17 @@ function safeImagePath($path) {
     return $default;
 }
 ?>
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Phone Spare Parts</li>
+    </ol>
+    </nav>
+</div>
+
+
+
 
 <div class="container mt-4">
     <h1>Phone Spare Parts</h1>

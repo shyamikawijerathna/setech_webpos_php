@@ -5,14 +5,8 @@ include "config/dbcon.php";
 include "config/function.php";
 
 $allowedCategories = [
-    'samsung phones',
-    'apple phones',
-    'redmi phones',
-    'oppo phones',
-    'huawei phones',
-    'vivo phones',
-    'nokia phones',
-    'infinix phones',
+    'used laptop',
+    
 ];
 
 $searchTerm = isset($_GET['search']) ? trim($_GET['search']) : '';
@@ -74,13 +68,13 @@ function safeImagePath($path) {
     <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.php">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Used Phones</li>
+        <li class="breadcrumb-item active" aria-current="page">Used Laptops</li>
     </ol>
     </nav>
 </div>
 
 <div class="container mt-4">
-    <h1>Used Phones</h1>
+    <h1>Used Laptops</h1>
 
     <form method="GET" class="row gy-2 gx-2 align-items-end mb-4">
         <div class="col-md-5">
@@ -98,7 +92,7 @@ function safeImagePath($path) {
         </div>
         <div class="col-md-3">
             <button type="submit" class="btn btn-primary">Filter</button>
-            <a href="phone_spare_parts.php" class="btn btn-secondary">Reset</a>
+            <a href="laptop_used.php" class="btn btn-secondary">Reset</a>
         </div>
     </form>
 

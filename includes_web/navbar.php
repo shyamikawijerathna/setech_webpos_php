@@ -31,9 +31,10 @@
                         <option value="3">Used Phones</option>
                         <option value="4">Desktop PC Accessories</option>
                         <option value="5">Desktop PC Used</option>
-                        <option value="6">Laptop Accessories</option>
-                        <option value="7">Laptop Spare Parts-Used</option>
-                        <option value="8">Laptop Spare Parts-New</option>
+                        <option value="6">Used Laptops</option>
+                        <option value="7">Laptop Accessories</option>
+                        <option value="8">Laptop Spare Parts-Used</option>
+                        <option value="9">Laptop Spare Parts-New</option>
                     </select>
                 </div>
 
@@ -57,12 +58,16 @@
                             window.location.href = 'desktop_pc_used.php'; 
                         }
                         else if (value === '6') { 
+                            window.location.href = 'laptop_used.php'; 
+                        }
+
+                        else if (value === '7') { 
                             window.location.href = 'laptop_accessories.php'; 
                         }
-                        else if (value === '7') { 
+                        else if (value === '8') { 
                             window.location.href = 'laptop_spare_parts_used.php'; 
                         }
-                        else if (value === '8') { 
+                        else if (value === '9') { 
                             window.location.href = 'laptop_spare_parts_new.php'; 
                         }
                         else {

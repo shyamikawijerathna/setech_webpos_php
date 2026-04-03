@@ -71,6 +71,15 @@ function safeImagePath($path) {
 ?>
 
 <div class="container mt-4">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Laptop Spare Parts (New)</li>
+    </ol>
+    </nav>
+</div>
+
+<div class="container mt-4">
     <h1>Laptop Spare Parts (New)</h1>
 
     <form method="GET" class="row gy-2 gx-2 align-items-end mb-4">
