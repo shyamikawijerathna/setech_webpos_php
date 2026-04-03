@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SE TECH|HOME</title>
+    <title>SE TECH | Shopping Experience</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="src_web/styles.css">
@@ -12,7 +12,7 @@
 
     <header class="bg-primary text-white py-2">
         <div class="container d-flex justify-content-between align-items-center">
-            <small>Contact: +94765789022   Email: sales@setech.lk</small>
+            <small>Contact: +94765789022 |  Email: sales@setech.lk</small>
             
             <div class="social-links">
                 <a href="https://www.facebook.com/share/14eGX5yWaM6/?mibextid=wwXIfr" class="text-white me-2" target="_blank">Facebook</a>

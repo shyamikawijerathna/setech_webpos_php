@@ -19,6 +19,16 @@ if ($id > 0) {
 }
 ?>
 
+<!--Breadcrumbs -->
+<div class="container mt-4">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Product Details</li>
+    </ol>
+    </nav>
+</div>
+
 <section class="section">
     <?php if ($product): ?>
         <h2 style="margin-left:200px;"><?= htmlspecialchars($product['prod_name']) ?></h2>

@@ -1,6 +1,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-light  sticky-top shadow-sm" style="background-color: #1fd4cb;">
         <div class="container">
+            <a class="me-2" href="index.php" style="display:inline-block; width:90px; height:60px;">
+                <img src="./src_web/img/logo.jpg" alt="SE TECH.LK" class="logo" style="width:100%; height:97%; object-fit:contain;border:4px solid #50e771;" />
+            </a>
             <a class="navbar-brand fw-bold" href="index.php"><h2><strong>SE TECH.LK</strong></h2></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>

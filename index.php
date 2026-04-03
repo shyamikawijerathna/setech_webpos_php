@@ -27,19 +27,24 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
+                    <a href="phone_spare_parts.php">
                     <img src="src_web/img/Banner_phone_display1.png" class="d-block w-100" alt="Slide 1">
                     
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
+                    <a href="desktop_pc_accessories.php">
                     <img src="src_web/img/Banner_desktop_Accessories.png" class="d-block w-100" alt="Slide 2">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
+                    <a href="laptop_accessories.php">
                     <img src="src_web/img/Banner_laptop_accessories.png" class="d-block w-100" alt="Slide 3">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
+                    <a href="phone_spare_parts.php">
                     <img src="src_web/img/Banner_batteries.png" class="d-block w-100" alt="Slide 4">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
+                    <a href="phone_accessories.php">
                     <img src="src_web/img/Banner_cables_accessories.png" class="d-block w-100" alt="Slide 5">
                 </div>
             </div>
@@ -52,39 +57,40 @@
             </button>
         </div>
 
-        <section class="container py-4 text-center">
-            <div class="row">
-                <div class="col-md-4 mb-5">
-                    <div class="card h-90 shadow-sm">
-                        <img src="src_web/img/Saleimgone.jpg" class="card-img-top" alt="Phone Accessories">
-                        
-                    </div>
-                </div>
 
-
-            
+        <section class="container py-3 text-center">
+            <div class="row g-3 align-items-stretch">
                 <div class="col-md-4 mb-4">
                     <div class="card h-90 shadow-sm">
-                        <img src="src_web/img/Saleimgtwo.jpg" class="card-img-top" alt="Phone Accessories">
+                        <img src="src_web/img/Saleimgone.jpg" class="card-img-top" alt="Phone Accessories">
                         <div class="card-body">
-                            <h5 class="card-title">Special Offer - Brand New / Used</h5>
-                            <p class="card-text">Build Your Dream PC with our exclusive deals.Limited time offer!</p>
-                            <a href="desktop_pc_accessories.php" class="btn btn-primary">Shop Now</a>
+                            <a href="phone_spare_parts.php" class="btn btn-primary">Shop Now</a>
                         </div>
-                        
                     </div>
                 </div>
 
-                 <div class="col-md-4 mb-2">
+                <div class="col-md-4 mb-4">
                     <div class="card h-90 shadow-sm">
-                        <img src="src_web/img/Saleimgthree.jpg" class="card-img-top" alt="Phone Accessories">
+                        <img src="src_web/img/Saleimgtwo.jpg" style="height:265px;" class="card-img-top" alt="Desktop Accessories">
+                        <div class="card-body">
+                            <h5 class="card-title">Special Offer - Brand New / Used</h5>
+                            <p class="card-text">Build Your Dream PC with our exclusive deals. Limited time offer!</p>
+                            <a href="desktop_pc_accessories.php" class="btn btn-primary">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 mb-4">
+                    <div class="card h-90 shadow-sm">
+                        <img src="src_web/img/Saleimgthree.jpg" style="height:265px;"class="card-img-top" alt="Laptop Accessories">
                         <div class="card-body">
                             <h5 class="card-title">Special Offer - Brand New / Used</h5>
                             <p class="card-text">Buy Your Dream Laptop with our exclusive deals. Limited time offer!</p>
-                            <a href="" class="btn btn-primary">Shop Now</a>
+                            <a href="laptop_used.php" class="btn btn-primary">Shop Now</a>
                         </div>
                     </div>
                 </div>
+            </div>
 
         </section>
 
@@ -154,7 +160,7 @@
                         </div>
 
                         <div class="col-md-2 text-center">
-                            <a href="desktopPcAccessories.php" class="btn btn-dark btn-md px-4 py-3 fw-bold rounded-pill shadow">
+                            <a href="desktop_pc_accessories.php" class="btn btn-dark btn-md px-4 py-3 fw-bold rounded-pill shadow">
                                 SHOP NOW
                             </a>
                         </div>
